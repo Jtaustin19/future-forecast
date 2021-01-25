@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(29, 29, 29);
+    color: rgb(202, 199, 196);
+}
+
+/* UV Index severity styles begin */
+.favorable {
+    background-color: green;
+    color: black;
+}
+
+.moderate {
+    background-color: yellow;
+    color: black;
+}
+
+.severe {
+    background-color: red;
+    color: black;
+}
+/* UV Index severity styles finnish */
+
+/* Utility classes begin */
+.hide {
+    display: none;
+}
+/* Utility classes finish */
