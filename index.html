@@ -11,20 +11,19 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-    <main>
-        <div class="col-3 background-navy">
-            <div class="card">
-                <form id="search-form" class="search-bar">
+    <main class="row">
+        <div class="card col-1 background-light">
+            <div class="">
+                <form id="search-form" class="search-form">
                     <label class="form-label">Search for a City:</label>
                     <input name="city-name" id="city-name" type="text" autofocus="true" class="form-input" placeholder="Enter City Name" />
-                    <button id="search-btn" type="submit"><i></i>Search</button>
+                    <button id="search-btn" type="submit">Search</button>
+                    <div id="search-history-container" class="search-history-container"></div>
                 </form>
-                <div id="search-history-container" class="search-history-container">
-                </div>
             </div>
         </div>
 
-        <div class="col-9 background-gray">
+        <div class="card col-4 background-medium">
             <div id="current-weather-container" class="card current-results hide">
                 <h3 id="city-header"></h3>
                 <h4 id="current-date"></h4>
@@ -39,17 +38,12 @@
             </div>
             <div id="five-day-container" class="five-day-container hide">
                 <h3>5-Day Forecast</h3>
-                <div id="each-day-container" class="each-day-container">
-                    <div class="col-2 card forecast-day-item">Day 1</div>
-                    <div class="col-2 card forecast-day-item">Day 2</div>
-                    <div class="col-2 card forecast-day-item">Day 3</div>
-                    <div class="col-2 card forecast-day-item">Day 4</div>
-                    <div class="col-2 card forecast-day-item">Day 5</div>
-                </div>
+                <div id="each-day-container" class="each-day-container row"></div>
             </div>
         </div>
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>

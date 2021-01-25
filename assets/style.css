@@ -1,9 +1,58 @@
-body {
-    background-color: rgb(29, 29, 29);
-    color: rgb(202, 199, 196);
+:root {
+    --primary: rgb(24, 88, 161);
+    --light: rgb(0, 0, 0);
+    --medium: rgb(102, 102, 102);
+    --dark: rgb(209, 203, 203);
 }
 
-/* UV Index severity styles begin */
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 650;
+}
+
+header {
+    text-align: center;
+}
+
+/* form styles start */
+label,
+input,
+button {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+}
+
+input {
+    
+}
+
+button {
+    margin: 20px 0 0 0;
+    border: 2px solid var(--medium);
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+#search-btn {
+    margin-top: 5px;
+    border: none;
+    background-color: var(--medium);
+}
+/* form styles end */
+
+/* UV Index styles start */
 .favorable {
     background-color: green;
     color: black;
@@ -18,10 +67,53 @@ body {
     background-color: red;
     color: black;
 }
-/* UV Index severity styles finnish */
+/* UV Index styles end */
 
-/* Utility classes begin */
-.hide {
-    display: none;
+/* utility classes start */
+.background-blue {
+    background-color: var(--primary);
 }
-/* Utility classes finish */
+
+.background-gray {
+    background-color: var(--medium);
+}
+
+.background-light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.card {
+    margin: 3px;
+    border: 3px solid var(--medium);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.col-1 {
+    flex: 0 0 calc(100% * 1 / 5 - 2%);
+}
+
+.col-2 {
+    flex: 0 0 calc(100% * 2 / 5 - 2%);
+}
+
+.col-3 {
+    flex: 0 0 calc(100% * 3 / 5 - 2%);
+}
+
+.col-4 {
+    flex: 0 0 calc(100% * 4 / 5 - 2%);
+}
+
+.col-5 {
+    flex: 0 0 100%;
+}
+/* utility styles end */
